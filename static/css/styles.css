@@ -17,7 +17,7 @@ body .uk-heading-large,
 body .uk-heading-medium, 
 body .uk-heading-small, 
 body .uk-heading-xlarge {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Kanit', sans-serif;
     font-weight: 600;
     line-height: 1.5;
 }
@@ -58,7 +58,7 @@ ul.uk-breadcrumb>*>:hover {
 }
 
 a.uk-accordion-title {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Kanit', sans-serif;
     font-weight: 600;
     font-size: 1rem;
 }
@@ -153,9 +153,10 @@ div.page__banner__inner {
 
 /* NAVBAR */
 
-div.top-navbar .uk-navbar-nav>li>a {
+.uk-navbar-nav>li>a {
     min-height: 40px;
     text-transform: unset;
+    color: #fff!important;
 }
 
 div .uk-navbar-container>.uk-container .uk-navbar-left {
@@ -195,16 +196,9 @@ div.uk-navbar-dropdown ul li {
 } */
 
 ul.uk-navbar-nav>li>a:not(.top-navbar a) {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Kanit', sans-serif;
     font-weight: 500;
     transition: .1s;
-    color: #000;
-}
-
-div ul.uk-navbar-nav>li>a:hover {
-    border-bottom: 3px solid #aa0817;
-    transition: .1s;
-    color: #aa0817;
 }
 
 ul.uk-nav-parent-icon>.uk-parent>a::after {
@@ -231,9 +225,18 @@ div.uk-overlay-hero {
     background:rgb(9 10 21 / 20%);
 }
 
-div.hero-text p {
-    font-size: 17.5px;
+div.hero-text h1 span {
+    color: transparent;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1px;
 }
+
+div.hero-text h1 {
+    color: #fff;
+    font-size: 8rem;
+    line-height: 1;
+}
+
 
 @media screen and (max-width: 800px) {
     div.hero-text {

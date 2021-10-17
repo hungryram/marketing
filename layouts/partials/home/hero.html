@@ -1,11 +1,49 @@
-
-<div class="uk-cover-container uk-flex uk-flex-center uk-flex-middle" uk-height-viewport style="background:url(https://res.cloudinary.com/hungryram19/image/upload/v1631221086/randy-nong/rn-insurance/happy-family-smiling.jpg) no-repeat top;background-size:cover">    
-    <div class="uk-overlay-hero uk-position-cover"></div>
-    <div class="hero-text uk-white uk-width-3-5@s uk-text-left uk-flex uk-flex-left uk-position-relative">
-        <div class="uk-width-2xlarge uk-text-left">
-            <h1 class="uk-margin-remove uk-white">{{ .Site.Data.home.hero_image.heading }}</h1>
-            <p class="uk-text-normal">{{ .Site.Data.home.hero_image.body }}</p>
-            <a href="/contact" class="uk-button-primary uk-button slide_right">Get in touch</a>
+<div class="uk-flex uk-flex-middle uk-cover-container" style="background: url(https://res.cloudinary.com/hungryram19/image/upload/v1634416412/Green%20Coast%20Organics/weed-background.jpg);background-size:cover; background-repeat: no-repeat" uk-height-viewport>
+    <div class="uk-width-1-1 uk-margin-large-top">
+        <div class="uk-container uk-container-xlarge">
+            <div class="uk-width-4-5">
+                <div class="hero-text">
+                    <h1><span>Green</span><br> Coast Organics</h1>
+                    <div class="uk-grid">
+                        <div class="uk-width-4-5 uk-white">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, est accusamus, reiciendis minima eum non beatae sint saepe enim, facilis iure aspernatur voluptates expedita animi voluptatem iusto dolor sequi eligendi.</p>
+                        </div>
+                        <div class="uk-width-auto">
+                            <div class="uk-margin-large-top uk-slider-container-offset" uk-slider>
+                                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                                    <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                                        {{ range where $.Site.RegularPages "Type" "blog" }}
+                                        <li>
+                                            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                                                <div class="uk-card-media-left uk-cover-container">
+                                                    <img src="{{ .Params.image }}" alt="" uk-cover>
+        
+                                                    <canvas width="20" height="50"></canvas>
+                                                </div>
+                                                <div>
+                                                    <div class="uk-card-body">
+                                                        <h3 class="uk-card-title">{{ .Title }}</h3>
+                                                        <p>{{ .Summary | truncate 100 }}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        {{ end }}
+                                    </ul>
+                            
+                                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                            
+                                </div>
+                            
+                                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
 </div>

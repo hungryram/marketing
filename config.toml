@@ -2,9 +2,7 @@ baseURL = "https://www.rninsurance.com/"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 enableRobotsTXT = "true"
 languageCode = "en-us"
-[[menu.main]]
-name = "Insurance Plans"
-weight = 2
+summaryLength = 10
 [[menu.main]]
 name = "About"
 url = "/about"

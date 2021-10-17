@@ -2,37 +2,13 @@
 {{ $navColor := .Site.Data.appearance.header }}
 {{ $navContact := .Site.Data.profile.contact_information }}
 {{ $headerSocial := .Site.Data.profile.social_media }}
-<style>
-    nav.uk-navbar-sticky ul li a,
-    .uk-navbar-sticky ul li a svg {
-        color: #000!important;
-    }
-</style>
-<div class="top-navbar">
-    <nav class="main-nav uk-navbar-container" style="background:#19202A">
-        <div class="uk-container">
-            <div uk-navbar>
-                <div class="uk-navbar-left">
-                    <ul class="uk-navbar-nav top-bar">
-                        {{ if $navContact.cell }}<li><a style="color:#fff;padding-left:0" href="tel:{{ $navContact.cell }}">{{ $navContact.cell }}</a></li>{{ end }}
-                        {{ if $navContact.email }}<li class="uk-visible@s"><a style="color:#fff;" href="mailto:{{ $navContact.email }}">{{ $navContact.email }}</a></li>{{ end }}
-                    </ul>
-                </div>
-                <div class="uk-navbar-right">
-                        <a href="/contact" class="uk-button uk-button-primary">Get a Quote</a>
-                </div>
-
-            </div>
-        </div>
-    </nav>
-</div>
 <div class="uk-visible@s" uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky uk-dark; top: 200">
-    <nav class="main-nav uk-navbar-container">
-        <div class="uk-container">
+    <nav class="main-nav uk-navbar-container uk-navbar-transparent">
+        <div class="uk-container uk-container-xlarge">
             <div uk-navbar>
                 <div class="uk-navbar-left">
                     <a href="{{ .Site.BaseURL }}">
-                        <img src="{{ .Site.Data.appearance.branding.logo }}" alt="{{ .Site.Data.profile.company_name }}" width="200" class="white-logo">
+                        <h2 class="uk-h3 uk-white">Green Coast Organics</h2>
                     </a>
 
                 </div>
