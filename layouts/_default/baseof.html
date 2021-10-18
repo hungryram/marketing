@@ -1,10 +1,12 @@
 {{ partial "global/head" . }}
-{{ partial "global/navbar" . }}
-<div class="uk-section uk-section-small page__banner uk-card" style="background: #dbdbdb">
-    <div class="page__slider" uk-scrollspy="cls:uk-animation-fade"></div>
+
+<div class="uk-section uk-section-large page__banner uk-card" style="background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://res.cloudinary.com/hungryram19/image/upload/v1634598108/green-coast-organics/holding-weed.jpg) no-repeat center;background-size:cover">
+    <div class="uk-position-top">
+        {{ partial "global/navbar" . }}
+    </div>
     <div class="uk-container">
-        <div class="page__banner__inner">
-            <h1 class="h1-title">{{ .Title }}</h1>
+        <div class="page__banner__inner uk-text-center uk-light">
+            <h1>{{ .Title }}</h1>
             {{ partial "templates/breadcrumbs" . }}
         </div>
     </div>

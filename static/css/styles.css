@@ -103,10 +103,6 @@ a.uk-button-primary {
     border: none;
 }
 
-.slide_right:hover {
-    box-shadow: inset 200px 0 0 0 #19202A;
-}
-
 body .uk-button-primary.uk-active, body .uk-button-primary:active,
 body .uk-button-primary:focus, body .uk-button-primary:hover {
     background-color: #375333;
@@ -122,32 +118,6 @@ body .uk-button-primary:focus, body .uk-button-primary:hover {
     ul.uk-breadcrumb>*>* {
         color:#19202A;
     }
-}
-
-@media screen and (min-width:800px) {
-    div.page__banner .page__slider {
-        content: '';
-        background: #375333;
-        position: absolute;
-        width: 45%;
-        height: 100%;
-        top: 0;
-        -webkit-transform-origin: 100% 0;
-        -ms-transform-origin: 100% 0;
-        transform-origin: 100% 0;
-        -webkit-transform: skew(
-    -45deg
-    );
-        -ms-transform: skew(-45deg);
-        transform: skew(
-    -45deg
-    );
-    }
-}
-
-div.page__banner__inner {
-    position: relative;
-    z-index: 1;
 }
 
 /* NAVBAR */

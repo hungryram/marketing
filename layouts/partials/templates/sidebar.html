@@ -1,0 +1,12 @@
+<div class="uk-width-expand@s">
+    <div class="uk-card uk-card-body">
+        <h2 class="uk-h3">Categories</h2>
+        <ul class="uk-list">
+            {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+          <li>
+            <a href="/categories{{ $name | urlize | relURL }}" class="tags accent">{{ $name | humanize }} <span href="#" uk-icon="icon: arrow-right" class="uk-margin-small-left"></span></a>
+          </li>
+          {{end}}
+        </ul>
+    </div>
+</div>

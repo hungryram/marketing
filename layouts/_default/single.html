@@ -1,0 +1,12 @@
+{{ define "main" }}
+    <div class="uk-section">
+        <div class="uk-container uk-container-xlarge">
+            {{ if .Params.featured_image }}
+            <img src="{{ .Params.featured_image }}" alt="">
+            {{ end }}
+            <div class="md__content uk-margin-medium-top">
+                {{ .Content }}
+            </div>
+        </div>
+    </div>
+{{ end }}
