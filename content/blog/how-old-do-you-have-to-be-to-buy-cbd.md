@@ -2,7 +2,7 @@
 author = []
 categories = []
 date = ""
-featured_image = ""
+featured_image = "https://res.cloudinary.com/hungryram19/image/upload/v1634543845/green-coast-organics/ryan-lange-JbCiYHNSInQ-unsplash_ucqizo.jpg"
 image_alt_tag = ""
 tags = []
 title = "How old do you have to be to buy CBD"
