@@ -2,7 +2,7 @@
 author = []
 categories = []
 date = ""
-featured_image = ""
+featured_image = "https://res.cloudinary.com/hungryram19/image/upload/v1634543907/green-coast-organics/avery-meeker-IBhnqy1Vc64-unsplash_c1xtpl.jpg"
 image_alt_tag = ""
 tags = []
 title = "How long is CBD detectable in urine"
