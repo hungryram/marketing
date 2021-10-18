@@ -1,27 +1,26 @@
 <div class="uk-flex uk-flex-middle uk-cover-container" style="background: url(https://res.cloudinary.com/hungryram19/image/upload/v1634416412/Green%20Coast%20Organics/weed-background.jpg);background-size:cover; background-repeat: no-repeat" uk-height-viewport>
     <div class="uk-width-1-1 uk-margin-large-top">
         <div class="uk-container uk-container-xlarge">
-            <div class="uk-width-4-5">
+            <div class="uk-width-4-5@s">
                 <div class="hero-text">
                     <h1><span>Green</span><br> Coast Organics</h1>
                     <div class="uk-grid">
-                        <div class="uk-width-4-5 uk-white">
+                        <div class="uk-width-4-5@m uk-white">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, est accusamus, reiciendis minima eum non beatae sint saepe enim, facilis iure aspernatur voluptates expedita animi voluptatem iusto dolor sequi eligendi.</p>
                         </div>
-                        <div class="uk-width-auto">
+                        <div class="uk-width-auto@m">
                             <div class="uk-margin-large-top uk-slider-container-offset" uk-slider>
                                 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-                                    <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                                    <ul class="uk-slider-items uk-child-width-1-2@s uk-grid uk-visible@s">
                                         {{ range where $.Site.RegularPages "Type" "blog" }}
                                         <li>
-                                            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                                            <div class="uk-card uk-grid-collapse uk-child-width-1-2 uk-margin" uk-grid>
                                                 <div class="uk-card-media-left uk-cover-container">
                                                     <img src="{{ .Params.image }}" alt="" uk-cover>
-        
-                                                    <canvas width="20" height="50"></canvas>
+                                                    <canvas width="20" height="20"></canvas>
                                                 </div>
                                                 <div>
-                                                    <div class="uk-card-body">
+                                                    <div class="uk-card-body" style="padding-top:4px;padding-bottom:4px;">
                                                         <h3 class="uk-card-title">{{ .Title }}</h3>
                                                         <p>{{ .Summary | truncate 100 }}</p>
                                                     </div>
@@ -35,9 +34,6 @@
                                     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
                             
                                 </div>
-                            
-                                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
-                            
                             </div>
                         </div>
                     </div>

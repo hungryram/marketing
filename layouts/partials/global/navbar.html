@@ -2,13 +2,13 @@
 {{ $navColor := .Site.Data.appearance.header }}
 {{ $navContact := .Site.Data.profile.contact_information }}
 {{ $headerSocial := .Site.Data.profile.social_media }}
-<div class="uk-visible@s" uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky uk-dark; top: 200">
+<div class="uk-visible@s">
     <nav class="main-nav uk-navbar-container uk-navbar-transparent">
         <div class="uk-container uk-container-xlarge">
             <div uk-navbar>
                 <div class="uk-navbar-left">
                     <a href="{{ .Site.BaseURL }}">
-                        <h2 class="uk-h3 uk-white">Green Coast Organics</h2>
+                        <img src="{{ $navbar.logo }}" alt="{{ .Site.Data.profile.company_name }}" width="250">
                     </a>
 
                 </div>
@@ -41,43 +41,37 @@
 
 
 <!-- mobile -->
-<div uk-sticky="animation: uk-animation-slide-top-medium; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-dark; cls-inactive: top: 400">
-    <nav class="uk-navbar uk-navbar-container uk-hidden@s uk-box-shadow-small" style="padding: 0 15px;">
+<div>
+    <nav class="uk-navbar uk-navbar-container uk-hidden@s uk-padding-small uk-box-shadow-small">
         <div class="uk-navbar-left">
             <a href="{{ .Site.BaseURL }}">
-                <img src="{{ .Site.Data.appearance.branding.logo }}" alt="{{ .Site.Data.profile.company_name }}" width="140">
+                <img src="https://res.cloudinary.com/hungryram19/image/upload/v1634542944/Green%20Coast%20Organics/dark-green-coast-logo.png" alt="{{ .Site.Data.profile.company_name }} logo" width="150" class="white-logo">
             </a>
         </div>
         <div class="uk-navbar-right">
-            <a class="uk-navbar-toggle" href="#modal-full" uk-toggle>
-                <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="navbar-toggle-icon"><rect y="9" width="15" height="2"></rect><rect y="3" width="20" height="2"></rect><rect y="15" width="10" height="2"></rect></svg>
-            </a>
+            <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#mobile-menu-slide" uk-toggle></a>
         </div>
     </nav>
-    </div>
-
-
-
-<div id="modal-full" class="uk-modal-full uk-modal mobile__wrapper" uk-modal>
-    <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
-        <button class="uk-modal-close-full" type="button" uk-close></button>
-
-        <ul class="uk-nav-default uk-nav-parent-icon uk-margin-auto-vertical uk-text-center" uk-nav>
-            {{ $currentPage := . }}
-            {{ range .Site.Menus.main }}
-            {{ if .HasChildren }}
-            <li class="uk-parent">
-                <a href="#" class="uk-text-light">{{ .Name }}</a>
-                <ul class="uk-nav-sub">
-                    {{ range .Children }}
-                    <li><a href="{{ .URL | absURL }}" class="uk-text-light">{{ .Name }}</a></li>
-                    {{ end }}
-                </ul>
-            </li>
-            {{ else }}
-            <li><a href="{{ .URL | absURL }}" class="uk-text-light">{{ .Name }}</a></li>
-            {{ end }}
-            {{ end }}
-        </ul>
-    </div>
 </div>
+    <div id="mobile-menu-slide" uk-offcanvas>
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+            <ul class="uk-nav-default uk-nav-parent-icon uk-margin-auto-vertical" uk-nav>
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main }}
+                {{ if .HasChildren }}
+                <li class="uk-parent">
+                    <a href="#" class="uk-text-light">{{ .Name }}</a>
+                    <ul class="uk-nav-sub">
+                        {{ range .Children }}
+                        <li><a href="{{ .URL | absURL }}" class="uk-text-light">{{ .Name }}</a></li>
+                        {{ end }}
+                    </ul>
+                </li>
+                {{ else }}
+                <li><a href="{{ .URL | absURL }}" class="uk-text-light">{{ .Name }}</a></li>
+                {{ end }}
+                {{ end }}
+
+            </ul>
+        </div>
+    </div>

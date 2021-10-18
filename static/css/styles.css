@@ -19,7 +19,6 @@ body .uk-heading-small,
 body .uk-heading-xlarge {
     font-family: 'Kanit', sans-serif;
     font-weight: 600;
-    line-height: 1.5;
 }
 
 body {
@@ -35,7 +34,7 @@ html body {
 }
 
 .main__content a {
-    color: #aa0817;
+    color: #375333;
     text-decoration: underline;
 }
 
@@ -83,7 +82,7 @@ a.uk-button-secondary {
 }
 
 .accent {
-    color: #aa0817;
+    color: #375333;
 }
 
 .uk-white {
@@ -92,7 +91,7 @@ a.uk-button-secondary {
 
 button.uk-button-primary,
 a.uk-button-primary {
-    background: #aa0817;
+    background: #375333;
     padding: 5px 40px;
     color: #FFF;
     display: inline-block;
@@ -110,7 +109,7 @@ a.uk-button-primary {
 
 body .uk-button-primary.uk-active, body .uk-button-primary:active,
 body .uk-button-primary:focus, body .uk-button-primary:hover {
-    background-color: #aa0817;
+    background-color: #375333;
     color: #fff;
 }
 
@@ -128,7 +127,7 @@ body .uk-button-primary:focus, body .uk-button-primary:hover {
 @media screen and (min-width:800px) {
     div.page__banner .page__slider {
         content: '';
-        background: #aa0817;
+        background: #375333;
         position: absolute;
         width: 45%;
         height: 100%;
@@ -172,7 +171,7 @@ div.uk-navbar-dropdown ul li {
 }
 
 div.uk-navbar-dropdown ul li:hover {
-    background: #aa0817;
+    background: #375333;
     transition: .3s;
     color: #fff;
 }
@@ -233,7 +232,7 @@ div.hero-text h1 span {
 
 div.hero-text h1 {
     color: #fff;
-    font-size: 8rem;
+    font-size: 6rem;
     line-height: 1;
 }
 
@@ -244,7 +243,7 @@ div.hero-text h1 {
     }
 
     div.hero-text h1 {
-        font-size: 1.5rem;
+        font-size: 3rem;
     }
 
     div.hero-text p.uk-text-normal {
@@ -267,10 +266,10 @@ div.hero-text h1 {
 
 .featured__section .uk-card-default:hover,
 .service__box .uk-card-default:hover {
-    background: #aa0817;
+    background: #375333;
     color: #fff;
     transition: .3s ease;
-    border: 1px solid #aa0817;
+    border: 1px solid #375333;
 }
 
 .featured__section .uk-card-default:hover h3,
@@ -314,7 +313,7 @@ div.hero-text h1 {
 }
 
 .contact__icons a:hover {
-    color: #aa0817;
+    color: #375333;
     transition: .3s;
 }
 
@@ -322,7 +321,7 @@ div.hero-text h1 {
 
 div.box-top {
     position: absolute;
-    background: #aa0817;
+    background: #375333;
     width: 200px;
     left: -50px;
     z-index: -1;
@@ -350,19 +349,19 @@ div.uk-card-secondary.uk-card-hover:hover {
 
 .faq__page .uk-card-body h3 {
     font-size: 1rem;
-    border-left: 4px solid #aa0817;
+    border-left: 4px solid #375333;
     padding-left: 10px;
 }
 
 ul.service__list__faq li a:hover {
-    color: #aa0817;
+    color: #375333;
     transition: .3s;
 }
 
 /* FOOTER */
 
 footer.footer {
-    background: #19202A;
+    background: #375333;
 }
 
 footer.footer h6,
@@ -376,7 +375,7 @@ div.footer-credit ul li a {
 }
 
 .contact-detail span.uk-icon-button {
-    background: #aa0817;
+    background: #375333;
 }
 
 .contact-detail svg {
@@ -400,7 +399,7 @@ footer.footer svg {
 }
 
 footer.footer svg:hover {
-    color: #aa0817;
+    color: #375333;
     transition: .3s;
 }
 
@@ -410,14 +409,13 @@ footer.footer svg:hover {
     }
 }
 
-/* SELECT 2 */
+/* SALE BADGE */
 
-body .select2-container--default .select2-selection--multiple {
+div.sale-badge {
+    position: absolute;
+    left: 0;
+    background: #375333;
     border-radius: 0;
-    border: 1px solid #e5e5e5;
-    height: 40px;
-}
-
-span.select2.select2-container.select2-container--default.select2-container--below {
-    overflow: scroll;
+    padding: 20px 30px;
+    font-size: 16px;
 }
