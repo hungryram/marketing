@@ -2,7 +2,7 @@
 author = []
 categories = []
 date = ""
-featured_image = ""
+featured_image = "https://res.cloudinary.com/hungryram19/image/upload/v1634543810/green-coast-organics/kimzy-nanney-b2haCjfk_cM-unsplash_aut8kv.jpg"
 image_alt_tag = ""
 tags = []
 title = "What is full spectrum CBD"
