@@ -1,0 +1,10 @@
+<div class="uk-card">
+    <div class="uk-card-media-top">
+        <img src="{{ .Params.featured_image }}" alt="">
+    </div>
+    <div class="uk-margin-medium-top">
+        <h3 class="uk-h4">{{ .Title }}</h3>
+        {{ .Summary | truncate 100 }}
+        <a href="" class="accent uk-text-italic uk-text-bold">Read more</a>
+    </div>
+</div>

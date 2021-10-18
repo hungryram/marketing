@@ -16,12 +16,12 @@
                                         <li>
                                             <div class="uk-card uk-grid-collapse uk-child-width-1-2 uk-margin" uk-grid>
                                                 <div class="uk-card-media-left uk-cover-container">
-                                                    <img src="{{ .Params.image }}" alt="" uk-cover>
+                                                    <img src="{{ .Params.featured_image }}" alt="{{ .Params.alt_tag_image }}" uk-cover>
                                                     <canvas width="20" height="20"></canvas>
                                                 </div>
                                                 <div>
                                                     <div class="uk-card-body" style="padding-top:4px;padding-bottom:4px;">
-                                                        <h3 class="uk-card-title">{{ .Title }}</h3>
+                                                        <h3 class="uk-h4">{{ .Title }}</h3>
                                                         <p>{{ .Summary | truncate 100 }}</p>
                                                     </div>
                                                 </div>
