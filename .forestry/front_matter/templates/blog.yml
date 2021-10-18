@@ -62,3 +62,5 @@ fields:
   config: {}
   template: url
   label: URL
+pages:
+- content/blog/how-to-make-cbd-oil.md
