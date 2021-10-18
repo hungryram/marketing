@@ -8,9 +8,6 @@ sections:
   path: data/profile.yml
   label: Profile
 - type: document
-  path: data/home.yml
-  label: Home Page
-- type: document
   path: data/appearance.yml
   label: Appearance
 - type: directory
@@ -32,23 +29,9 @@ sections:
   - blog
 - type: heading
   label: Default Pages
-- type: directory
-  path: content/insurance
-  label: Insurance
-  create: documents
-  match: "**/*"
-  templates:
-  - services
-  - heading-and-body
-- type: document
-  path: content/about/_index.md
-  label: About
 - type: document
   path: content/contact/_index.md
   label: Contact
-- type: document
-  path: content/faq/_index.md
-  label: FAQ
 - type: document
   path: content/testimonials/_index.md
   label: Testimonials

@@ -115,5 +115,3 @@ fields:
         format: markdown
     label: Body
   label: Service List
-pages:
-- data/home.yml
