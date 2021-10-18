@@ -2,7 +2,7 @@
 author = []
 categories = []
 date = ""
-featured_image = ""
+featured_image = "https://res.cloudinary.com/hungryram19/image/upload/v1634543873/green-coast-organics/avery-meeker-2rW8lq0NgPU-unsplash_zg8lwr.jpg"
 image_alt_tag = ""
 tags = []
 title = "How much CBD should I take"
