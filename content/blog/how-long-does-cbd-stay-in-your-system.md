@@ -11,8 +11,5 @@ url = ""
 meta_description = ""
 title_tag = ""
 
-_editable_editor
-  - visual
-
 +++
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, est accusamus, reiciendis minima eum non beatae sint saepe enim, facilis iure aspernatur voluptates expedita animi voluptatem iusto dolor sequi eligendi.
